@@ -1,6 +1,6 @@
 ﻿
 
-New-ADOrganizationalUnit -Name DL -Path "CHEMIN OU POUR STOCKAGE OU DL"
+New-ADOrganizationalUnit -Name DL -Path "CHEMIN OU POUR STOCKAGE OU DL ex: ou=entite,dc=domaine,dc=fr"
 
 $dom = Get-ADDomain
 $DN = "OU=DL," + $dom.DistinguishedName
